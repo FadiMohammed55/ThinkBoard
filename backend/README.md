@@ -52,16 +52,24 @@ backend
 
 ### Auth
 
+```text
+
 POST /api/auth/register
 POST /api/auth/login
 
+```
+
 ### Notes (Protected)
+
+```text
 
 GET /api/notes
 GET /api/notes/:id
 POST /api/notes
 PUT /api/notes/:id
 DELETE /api/notes/:id
+
+```
 
 ---
 
@@ -102,6 +110,8 @@ http://localhost:5050
 ## 👨‍💻 Author
 
 ```text
+
 Fadi Mohammed  
 Full-Stack MERN Developer
+
 ```
