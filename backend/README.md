@@ -87,6 +87,8 @@ UPSTASH_REDIS_REST_TOKEN=
 
 ```
 
+---
+
 ## ▶️ Run Backend Locally
 
 To run the backend on your local machine:
@@ -106,6 +108,8 @@ npm run dev
 http://localhost:5050
 
 ```
+
+---
 
 ## 👨‍💻 Author
 
