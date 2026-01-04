@@ -33,14 +33,14 @@ The backend is responsible for:
 
 ## 📁 Folder Structure
 
-backend/
-├── src/
-│   ├── config/         # Database & external services config
-│   ├── controllers/    # Route logic
-│   ├── middleware/     # Auth & rate limiting
-│   ├── models/         # Mongoose models
-│   ├── routes/         # API routes
-│   └── server.js       # App entry point
+backend
+  └ src
+      └ config
+      └ controllers
+      └ middleware
+      └ models
+      └ routes
+      └ server.js
 
 ---
 
