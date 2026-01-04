@@ -33,6 +33,8 @@ The backend is responsible for:
 
 ## 📁 Folder Structure
 
+```text
+
 backend
   └ src
       └ config
@@ -41,6 +43,8 @@ backend
       └ models
       └ routes
       └ server.js
+
+```
 
 ---
 
@@ -66,19 +70,23 @@ DELETE /api/notes/:id
 Create a `.env` file:
 
 ```env
+
 PORT=5050
 MONGO_URI=your_mongodb_uri
 JWT_SECRET=your_secret_key
 UPSTASH_REDIS_REST_URL=
 UPSTASH_REDIS_REST_TOKEN=
 
+```
+
 ## ▶️ Run Backend Locally
 
 To run the backend on your local machine:
 
+```bash
+
 1. Install dependencies
 
-```bash
 npm install
 
 2. Start the development server
@@ -89,7 +97,11 @@ npm run dev
 
 http://localhost:5050
 
+```
+
 ## 👨‍💻 Author
 
+```text
 Fadi Mohammed  
 Full-Stack MERN Developer
+```
