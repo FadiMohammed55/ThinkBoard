@@ -64,6 +64,7 @@ DELETE /api/notes/:id
 
 Create a `.env` file:
 
+```env
 PORT=5050
 MONGO_URI=your_mongodb_uri
 JWT_SECRET=your_secret_key
@@ -76,6 +77,7 @@ To run the backend on your local machine:
 
 1. Install dependencies
 
+```bash
 npm install
 
 2. Start the development server
@@ -86,6 +88,7 @@ npm run dev
 
 http://localhost:5050
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Fadi Mohammed
+Fadi Mohammed  
+Full-Stack MERN Developer
