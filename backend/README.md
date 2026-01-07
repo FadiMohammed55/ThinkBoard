@@ -80,10 +80,11 @@ Create a `.env` file:
 ```env
 
 PORT=5050
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_secret_key
-UPSTASH_REDIS_REST_URL=
-UPSTASH_REDIS_REST_TOKEN=
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+UPSTASH_REDIS_REST_URL=your_upstash_url
+UPSTASH_REDIS_REST_TOKEN=your_upstash_token
+NODE_ENV=development
 
 ```
 
