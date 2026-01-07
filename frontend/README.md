@@ -1,16 +1,114 @@
-# React + Vite
+# ThinkBoard Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This folder contains the **frontend application** for the ThinkBoard project, built using **React**.
 
-Currently, two official plugins are available:
+The frontend is responsible for:
+- User interface and user experience
+- Authentication pages (Login / Register)
+- Displaying and managing notes
+- Communicating with the backend API
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Modern ThinkBoard-style UI
+- User authentication (Login / Register)
+- Protected pages
+- Create, view, and delete notes
+- Rate-limit handling UI
+- Responsive design
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- React (Vite)
+- React Router DOM
+- Axios
+- Tailwind CSS
+- DaisyUI
+- JWT Authentication
+
+---
+
+## 📁 Folder Structure
+
+```text
+
+frontend/
+└── src/
+    ├── api/              # Axios configuration
+    ├── components/       # Reusable UI components
+    ├── pages/            # Application pages
+    │   └── auth/         # Login & Register pages
+    ├── App.jsx
+    ├── main.jsx
+    └── index.css
+
+```
+
+---
+
+## 🔗 Backend Connection
+
+The frontend communicates with the backend API using Axios.
+
+```bash
+
+Base URL:
+http://localhost:5050/api
+
+```
+
+Make sure the backend server is running before starting the frontend.
+
+---
+
+## 🔐 Authentication Flow
+
+```text
+
+1. User registers or logs in
+2. Backend returns a JWT token
+3. Token is stored in localStorage
+4. Axios sends the token with each request
+5. Protected pages require authentication
+
+```
+
+---
+
+## ▶️ Run Frontend Locally
+
+To run the frontend on your local machine:
+
+```bash
+
+
+1. Install dependencies
+
+npm install
+
+2. Start the development server
+
+npm run dev
+
+3. The application will run at:
+
+http://localhost:5173
+
+```
+
+⚠️ Make sure the backend server is running on port 5050.
+
+---
+
+## 👨‍💻 Author
+
+```text
+
+Fadi Mohammed  
+Full-Stack MERN Developer
+
+```
