@@ -7,12 +7,10 @@ import {
   getNoteById,
 } from "../controllers/notesController.js";
 import protect from "../middleware/authMiddleware.js";
-import rateLimiter from "../middleware/rateLimiter.js";
 
 const router = express.Router();
 
 router.use(protect);
-router.use(rateLimiter);
 
 router.get("/", getAllNotes);
 router.get("/:id", getNoteById);

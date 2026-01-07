@@ -31,31 +31,28 @@ export async function getNoteById(req, res) {
   }
 }
 
-export async function createNote(req, res) {
+export const createNote = async (req, res) => {
   try {
     const { title, content } = req.body;
 
     if (!title || !content) {
       return res
         .status(400)
-        .json({ message: "Title and Content are required" });
+        .json({ message: "Title and content are required" });
     }
 
-    const note = new Note({
+    const note = await Note.create({
       title,
       content,
-      user: req.user._id,
+      user: req.user?.id, // optional
     });
 
-    const savedNote = await note.save();
-
-    res.status(201).json(savedNote);
+    res.status(201).json(note);
   } catch (error) {
-    console.error("Error in createNote controller", error);
-
-    res.status(500).json({ message: "Internal Server Error" });
+    console.error("Create note error:", error);
+    res.status(500).json({ message: "Server error" });
   }
-}
+};
 
 export async function updateNote(req, res) {
   try {
