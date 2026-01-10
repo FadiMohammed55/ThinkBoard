@@ -90,11 +90,11 @@ cd backend
 npm install
 npm run dev
 
+```
+
 Backend runs on:
 
 http://localhost:5050
-
-```
 
 ### 2️⃣ Frontend
 
@@ -104,11 +104,11 @@ cd frontend
 npm install
 npm run dev
 
+```
+
 Frontend runs on:
 
 http://localhost:5173
-
-```
 
 ---
 
@@ -138,9 +138,12 @@ Authorization: Bearer YOUR_TOKEN
 
 ## 👨‍💻 Author
 
-```text
 
 Fadi Mohammed  
 Full-Stack MERN Developer
 
-```
+---
+
+📄 License
+
+This project is licensed under the MIT License.
